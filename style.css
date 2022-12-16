@@ -55,3 +55,7 @@ border-left: 2px solid black;
 #quadrado3, #quadrado6, #quadrado9:disabled {
 border-left: 2px solid black;
 }
+
+a {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
