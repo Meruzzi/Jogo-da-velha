@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1>Jogo da Velha</h1>
+    <h2>Jogador da vez: <span id="JogadorDaVez">X</span></h2>
+    <h2 id="vencedorRodada"></h2>
+    <h2>Placar</h2>
+    <h3>Jogador X: <span id="placarX">0</span></h3>
+    <h3>Jogador O: <span id="placarO">0</span></h3>
+    <div id="tempoPartida">
+    <h3>Tempo da partida: <span id="tempo">00:00:00</span>
+      <h3>Melhor tempo jogador X: <span id="melhorTempoX">00:00:00</span></h3>
+        <h3>Melhor tempo jogador O: <span id="melhorTempoO">00:00:00</span>
+        </h3>
+      </div>
+  </header>
+
+  <main>
+    <div id="jogoVelha">
+      <div class="tile_row">
+        <button class="tile" id="quadrado1" onclick="escolhaUsuario(event, 1)"></button>
+        <button class="tile" id="quadrado2" onclick="escolhaUsuario(event, 2)"></button>
+        <button class="tile" id="quadrado3" onclick="escolhaUsuario(event, 3)"></button>
+      </div>
+      <div class="tile_row">
+        <button class="tile" id="quadrado4" onclick="escolhaUsuario(event, 4)"></button>
+        <button class="tile" id="quadrado5" onclick="escolhaUsuario(event, 5)"></button>
+        <button class="tile" id="quadrado6" onclick="escolhaUsuario(event, 6)"></button>
+      </div>
+      <div class="tile_row">
+        <button class="tile" id="quadrado7" onclick="escolhaUsuario(event, 7)"></button>
+        <button class="tile" id="quadrado8" onclick="escolhaUsuario(event, 8)"></button>
+        <button class="tile" id="quadrado9" onclick="escolhaUsuario(event, 9)"></button>
+      </div>
+    </div>
+    <br>
+    <button onclick="reiniciarJogo()">JOGAR DE NOVO!</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.tile_row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.tile {
+  border: none;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 1px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+button:disabled {
+  color: black;
+  border: none;
+}
+
+.tile:hover {cursor: pointer; background-color: green;}
+
+
+#quadrado1, #quadrado4, #quadrado7 {
+  border-right: 2px solid black;
+}
+
+#quadrado4, #quadrado5, #quadrado6 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#quadrado3, #quadrado6, #quadrado9 {
+border-left: 2px solid black;
+}
+#quadrado1, #quadrado4, #quadrado7:disabled {
+  border-right: 2px solid black;
+}
+
+#quadrado4, #quadrado5, #quadrado6:disabled {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#quadrado3, #quadrado6, #quadrado9:disabled {
+border-left: 2px solid black;
+}
